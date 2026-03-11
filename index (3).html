@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<title>Matyko Ultra Pro</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+color:white;
+text-align:center;
+background:#020617;
+overflow-x:hidden;
+}
+
+/* csillagos háttér */
+
+.stars{
+position:fixed;
+width:100%;
+height:100%;
+background:url("https://www.transparenttextures.com/patterns/stardust.png");
+animation:moveStars 80s linear infinite;
+z-index:-1;
+}
+
+@keyframes moveStars{
+from{background-position:0 0;}
+to{background-position:10000px 6000px;}
+}
+
+header{
+font-size:65px;
+padding:40px;
+font-weight:bold;
+letter-spacing:4px;
+text-shadow:0 0 30px #00ff88;
+}
+
+/* profil */
+
+.profile img{
+width:190px;
+height:190px;
+border-radius:50%;
+border:6px solid #00ff88;
+box-shadow:0 0 50px #00ff88;
+animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0px);}
+50%{transform:translateY(-20px);}
+100%{transform:translateY(0px);}
+}
+
+h1{
+font-size:50px;
+}
+
+p{
+font-size:22px;
+opacity:0.9;
+}
+
+/* gombok */
+
+.links{
+margin-top:40px;
+}
+
+.linkbtn{
+display:block;
+width:340px;
+margin:20px auto;
+padding:20px;
+font-size:24px;
+border-radius:15px;
+text-decoration:none;
+color:white;
+background:#111827;
+box-shadow:0 0 20px #00ff88;
+transition:0.3s;
+}
+
+.linkbtn:hover{
+transform:scale(1.15);
+box-shadow:0 0 60px #00ff88;
+background:#022c22;
+}
+
+/* kártyák */
+
+.cards{
+margin-top:70px;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:30px;
+}
+
+.card{
+background:#020617;
+padding:30px;
+width:250px;
+border-radius:15px;
+box-shadow:0 0 25px #00ff88;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.12);
+box-shadow:0 0 60px #00ff88;
+}
+
+/* youtube */
+
+.video{
+margin-top:70px;
+}
+
+iframe{
+border-radius:15px;
+box-shadow:0 0 30px #00ff88;
+}
+
+/* footer */
+
+footer{
+margin-top:80px;
+padding:25px;
+background:#020617;
+font-size:15px;
+opacity:0.7;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<header>
+🎮 MATYKO
+</header>
+
+<div class="profile">
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Mallard_drake.jpg">
+</div>
+
+<h1>Szia! Matyko vagyok 🦆</h1>
+<p>Streamer • Gamer • Content Creator</p>
+
+<div class="links">
+
+<a class="linkbtn" href="https://discord.gg/g7JyhYky" target="_blank">
+💬 Discord
+</a>
+
+<a class="linkbtn" href="https://www.tiktok.com/@matykoxyz?is_from_webapp=1&sender_device=pc" target="_blank">
+🎵 TikTok
+</a>
+
+<a class="linkbtn" href="https://youtube.com/@matyko274?si=aRUR5rbta3Z62ylu" target="_blank">
+▶️ YouTube
+</a>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h2>🎮 Gaming</h2>
+<p>Minecraft és más játékok.</p>
+</div>
+
+<div class="card">
+<h2>🎥 Videók</h2>
+<p>YouTube gameplay és videók.</p>
+</div>
+
+<div class="card">
+<h2>👥 Community</h2>
+<p>Csatlakozz a Discord szerverhez!</p>
+</div>
+
+</div>
+
+<div class="video">
+
+<h2>📺 Legújabb videóm</h2>
+
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/"
+allowfullscreen>
+</iframe>
+
+</div>
+
+<footer>
+© 2026 Matyko Gaming
+</footer>
+
+</body>
+</html>
